@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  server:
+    build:
+      context: .
+      dockerfile: dockerfile.prod
+    volumes:
+      — .:/opt/go-jwt-auth-1
+    command: "/opt/go-jwt-auth-1/go-jwt-auth-1"

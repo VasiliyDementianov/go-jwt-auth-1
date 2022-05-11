@@ -1,0 +1,8 @@
+{
+	"name": "go-jwt-auth-1-dev",
+	"dockerComposeFile": ["../docker-compose.dev.yml"],
+	"service": "go-jwt-auth-1",
+	"workspaceFolder": "/opt/go-jwt-auth-1",
+	"extensions": ["golang.Go"],
+	"shutdownAction": "stopCompose"
+}

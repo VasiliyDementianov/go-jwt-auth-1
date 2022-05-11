@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  go-jwt-auth-1:
+    build:
+      context: .
+      dockerfile: dockerfile.dev
+    volumes:
+      - .:/opt/go-jwt-auth-1
+    user: "vscode"
+    command: /bin/sh -c "while sleep 1000; do :; done"

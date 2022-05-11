@@ -1,0 +1,13 @@
+# build stage
+FROM golang:1.17-buster AS builder
+WORKDIR /opt/go-jwt-auth-1
+COPY . .
+#RUN apk add --no-cache git
+RUN go build -v -o go-jwt-auth-1 ./
+
+# final stage
+FROM buster:latest
+WORKDIR /opt/go-jwt-auth-1
+RUN apk --no-cache add ca-certificates
+COPY --from=builder /opt/go-jwt-auth-1 ./
+#ENTRYPOINT ./go-jwt-auth-1

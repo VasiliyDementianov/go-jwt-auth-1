@@ -1,0 +1,27 @@
+FROM golang:1.17-buster
+#RUN go get github.com/cespare/reflex
+WORKDIR /opt/go-jwt-auth-1
+
+ARG USERNAME=vscode
+ARG USER_UID=1000
+ARG USER_GID=$USER_UID
+
+RUN groupadd --gid $USER_GID $USERNAME \
+    && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
+
+    && apt-get update \
+    && apt-get install -y sudo \
+    && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
+    && chmod 0440 /etc/sudoers.d/$USERNAME
+
+COPY ./ ./
+RUN chown -R $USERNAME:$USERNAME /opt/go-jwt-auth-1
+RUN chmod 755 /opt/go-jwt-auth-1
+
+USER $USERNAME
+
+RUN go install -v golang.org/x/tools/gopls@latest
+RUN go install -v github.com/go-delve/delve/cmd/dlv@latest
+RUN go get github.com/labstack/echo/v4
+RUN go get github.com/dgrijalva/jwt-go
+#ENTRYPOINT [“reflex”, “-c”, “reflex.conf”]
