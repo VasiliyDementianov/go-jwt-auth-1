@@ -13,6 +13,7 @@ func main() {
 	})
 	h := &handler{}
 	e.POST("/login", h.login)
+	e.POST("/token", h.token)
 	e.GET("/private", h.private, isLoggedIn)
 	e.GET("/admin", h.private, isLoggedIn, isAdmin)
 	e.Logger.Fatal(e.Start(":1323"))

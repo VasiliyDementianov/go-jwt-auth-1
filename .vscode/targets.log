@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed May 11 22:44:41 2022
+# Make data base, printed on Thu May 12 22:49:09 2022
 
 # Variables
 
@@ -51,7 +51,7 @@ SNAP_DATA = /var/snap/code/96
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:53293
+JOURNAL_STREAM = 8:49809
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -81,7 +81,7 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 _ = /snap/code/96/usr/share/code/code
 # environment
-MANAGERPID = 1922
+MANAGERPID = 1923
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -95,11 +95,11 @@ GSETTINGS_SCHEMA_DIR = /snap/code/96/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/home/dementianovvv/go/bin:/usr/local/go/bin:/home/dementianovvv/go/bin
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/home/dementianovvv/go/bin
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/dementianovvv:@/tmp/.ICE-unix/2140,unix/dementianovvv:/tmp/.ICE-unix/2140
+SESSION_MANAGER = local/dementianovvv:@/tmp/.ICE-unix/2141,unix/dementianovvv:/tmp/.ICE-unix/2141
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -119,7 +119,7 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 0c10afef2dbd4512b81a4d4ad150a1d0
+INVOCATION_ID = 45b3ad8235fd4e84a8be934a36f54eb5
 # environment
 GDK_PIXBUF_MODULEDIR = /snap/code/96/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
@@ -131,7 +131,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 12381
+GIO_LAUNCHED_DESKTOP_FILE_PID = 15196
 # automatic
 %F = $(notdir $%)
 # environment
@@ -145,7 +145,7 @@ PWD = /home/dementianovvv/projects/go/auth/go-jwt-auth-1
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 2102
+SSH_AGENT_PID = 2103
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -197,7 +197,7 @@ SHLVL = 0
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-98d6493a-3882-4e1c-b619-a29552795514.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-f0220af9-b519-4eaf-93bb-58ea5a9f6fa3.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -236,6 +236,8 @@ MFLAGS = -pqrR
 GDK_BACKEND = x11
 # environment
 LC_PAPER = ru_RU.UTF-8
+# environment
+NO_AT_BRIDGE = 1
 # environment
 LC_IDENTIFICATION = ru_RU.UTF-8
 # environment
@@ -279,20 +281,20 @@ LC_ADDRESS = ru_RU.UTF-8
 # environment
 LANG = C
 # environment
- 
-VSCODE_PID = 12427
+VSCODE_PID = 4939
 # variable set hash-table stats:
-# Load=134/1024=13%, Rehash=0, Collisions=24/159=15%
+# Load=135/1024=13%, Rehash=0, Collisions=24/160=15%
 
 # Pattern-specific Variable Values
 
 # No pattern-specific variable values.
+ 
 
 # Directories
 
-# . (device 66308, inode 4065287): 19 files, no impossibilities.
+# . (device 66308, inode 4065287): 21 files, no impossibilities.
 
-# 19 files, no impossibilities in 1 directories.
+# 21 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -342,12 +344,12 @@ go-mod-init:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 26 / storage = 297 B / avg = 11 B
-# current buf: size = 8162 B / used = 297 B / count = 26 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 28 / storage = 341 B / avg = 12 B
+# current buf: size = 8162 B / used = 341 B / count = 28 / avg = 12 B
 
-# strcache performance: lookups = 32 / hit rate = 18%
+# strcache performance: lookups = 34 / hit rate = 17%
 # hash-table stats:
-# Load=26/8192=0%, Rehash=0, Collisions=1/32=3%
-# Finished Make data base on Wed May 11 22:44:41 2022
+# Load=28/8192=0%, Rehash=0, Collisions=1/34=3%
+# Finished Make data base on Thu May 12 22:49:09 2022
 
  
